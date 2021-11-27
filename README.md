@@ -10,8 +10,9 @@ Inference that takes too long will lead to audio output failure.
 If you try this with Jetson Nano, you need to follow setup step for pytorch 1.10:  
 https://qengineering.eu/install-pytorch-on-jetson-nano.html  
 
-Prepare the trained data and transfer to your device.  
+Prepare the training data and transfer to your device.  
 This code attempts to load "best_result.pth".  
+You can make a training data with [this](https://github.com/kmwebnet/Audio-effect-replicator-pytorch) project.  
 
 Make the LSTM parameters on the 23rd line below the same as the LSTM settings set during training.  
 self.lstm0 = nn.LSTM(input_size=1, hidden_size=6, batch_first=True, num_layers=2)   
